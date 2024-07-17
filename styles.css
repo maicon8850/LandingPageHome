@@ -1,0 +1,79 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    overflow: hidden; /* Garante que o conteúdo flutuante esteja contido */
+}
+
+/* Estilo do título dentro da barra de navegação */
+.navbar h1 {
+    color: white; /* Cor do texto */
+    margin: 0; /* Remove margem padrão */
+    padding: 14px 20px; /* Espaçamento interno */
+    display: inline-block; /* Mantém o título na mesma linha que os links */
+}
+
+/* Estilo da lista de navegação */
+.navbar ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    float: right; /* Alinha a lista à direita */
+    display: flex; /* Exibe itens em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+/* Estilo dos itens da lista */
+.navbar ul li {
+    float: left; /* Alinha itens à esquerda */
+}
+
+/* Estilo dos links de navegação */
+.navbar ul li a {
+    display: block; /* Torna o link um bloco */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 14px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Estilo dos links quando o mouse está sobre eles */
+.navbar ul li a:hover {
+    background-color: #111; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do contêiner de pesquisa */
+.navbar .search-container {
+    display: flex; /* Exibe itens em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    padding: 14px 20px; /* Espaçamento interno */
+}
+
+/* Estilo do campo de entrada de pesquisa */
+.navbar .search-container input {
+    padding: 6px; /* Espaçamento interno */
+    margin-right: 6px; /* Espaçamento à direita */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão de pesquisa */
+.navbar .search-container button {
+    background-color: #111; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 6px 10px; /* Espaçamento interno */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilo do botão de pesquisa quando o mouse está sobre ele */
+.navbar .search-container button:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
