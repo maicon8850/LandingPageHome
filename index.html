@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--Cabeçalho-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--aqui controla a forma como a pagina deve ser exibida em diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechGadgets</title>
-    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="styles.css"> 
-    <!-- Link para a biblioteca de ícones Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  <!-- ícones Font -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
 </head>
 <body>
-    <!-- Início da barra de navegação -->
+    
+    <!-- Barra de pesquisa-->
     <div class="navbar">
-        <!-- Título da barra de navegação TITULO PRINCIPAL DA PAGINA-->
-        <h1>TechGadgets</h1>
-        <!-- Lista de itens de navegação -->
+        <h1><span class="tech">Tech</span>Gadgets</h1>
         <ul>
             <li><a href="#home">Página Inicial</a></li>
             <li><a href="#buy">Comprar</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
             <li><a href="#account">Minha Conta</a></li>
-            <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
-            <!-- Campo de pesquisa -->
+            <li><a href="#cart"><i class="fas fa-shopping-cart"></i> </a></li>
             <li>
                 <div class="search-container">
                     <input type="text" placeholder="Pesquisar...">
@@ -31,6 +30,226 @@
             </li>
         </ul>
     </div>
-    <!-- Fim da barra de navegação -->
+
+  <!-- Primeira coluna-->
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>TechGadgets: Loja Especializada em</h1>
+        <h1>Eletrônicos e Gadgets de Última Geração</h1>
+        <p>Sucesso nem sempre tem a ver com grandeza. Tem a ver com consistência. 
+        Trabalho duro consistente supera o sucesso. A grandeza virá.</p>
+        <a href="#" class="cta-button">Ver Produtos</a>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide hero-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/watch-card-40-compare-202309_GEO_BR-removebg-preview.png" class="d-block w-100" alt="Fone de Ouvido JBL">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/macbook.png" class="d-block w-100" alt="Smartwatch Ultra">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/fone.png" class="d-block w-100" alt="Outro Gadget">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</div>
+
+
+ 
+
+<!--------------------- Nova seção com três imagens adicionadas ao corpo------------------->
+<section class="products-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imagens/controle-sem-fio-ps5-sony-dualsense-edge-preto-e-branco-cfi-zcp1wy_1669384364_gg.jpg" alt="Descrição da Imagem 1">
+            </div>
+            <div class="col-md-4">
+                <img src="imagens/Alexa.jpg" alt="Descrição da Imagem 2">
+            </div>
+            <div class="col-md-4">
+                <img src="imagens/macbook-air-midnight-gallery2-20220606_GEO_US.png" alt="Descrição da Imagem 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------ Aplicação de mais produtos ------------>
+<div class="section-title">
+    <h2>Produtos Selecionados</h2>   <!-- Titulo dessa aplicação-->
+</div>
+
+<div class="product-grid">
+    <div class="product-card">
+        <img src="imagens/macbook-air-midnight-gallery2-20220606_GEO_US.png" alt="Xbox" class="product-image">
+        <h3>Apple notebook MacBook Air de 13</h3>
+        <p class="price"> R$8.888</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/Fone jbl.jpg" alt="Steering Wheel" class="product-image">
+        <h3>JBL, Fone de Ouvido Sem Fio, Bluetooth, Tune Flex TWS - Preto</h3>
+        <p class="price">R$424,00</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/tablet_.jpg" alt="PS5" class="product-image">
+        <h3>Tablet Samsung Galaxy Tab S6 Lite</h3>
+        <p class="price">R$1.614,15</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/xbox_.jpg" alt="Gaming PC" class="product-image">
+        <h3>PlayStation®5 Slim Edição Digital</h3>
+        <p class="price"> R$3.650,00</p>
+        <p class="rating">★★★★★</p>
+    </div>
+</div>
+
+<!-------------------Aplicação de ultimos produtos---------------->
+
+<div class="section-title">
+    <h2>Ultimos Produtos</h2>   <!-- Titulo dessa aplicação-->
+</div>
+
+<div class="product-grid">
+    <div class="product-card">
+        <img src="imagens/61lIQuAv0KL._AC_SL1500_.jpg" alt="Xbox" class="product-image">
+        <h3>INFIBLA Soundbar pc gamer subwoofer p2 </h3>
+        <p class="price"> R$8.888</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/611As7HaRKL._AC_SL1000_.jpg" alt="Steering Wheel" class="product-image">
+        <h3>Monitor UHD Samsung 32", 4K </p>
+            <p class="price"> R$1.798,00</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/61SWlZxGIdL._AC_SL1000_.jpg" alt="PS5" class="product-image">
+        <h3>
+            Apple Watch Ultra 2 GPS + Cellular • Caixa de titânio</h3>
+        <p class="price">R$7.126</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/51MPDVS6XxL._AC_SL1200_.jpg" alt="Gaming PC" class="product-image">
+        <h3>CADEIRA GAMER ROCKET PRETA – CGR10PT – VINIK</h3>
+        <p class="price"> R$769,00</p>
+        <p class="rating">★★★★★</p>
+    </div>
+</div>
+<div class="product-grid">
+    <div class="product-card">
+        <img src="imagens/51jr824jKVL._AC_SL1000_.jpg" alt="Xbox" class="product-image">
+        <h3>Apple iPhone 15 Pro (128 GB) </h3>
+        <p class="price"> R$6.988,99</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/51xsfERvJaL._AC_.jpg " alt="Steering Wheel" class="product-image">
+        <h3>Fei-yu-Tech gimbal estabilizador SCORP C, carga útil de 5,5 lbs, estabilizador de cardan de 3 eixos  </p>
+            <p class="price"> R$1.798,00</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/71ZuATwIhML._AC_SL1500_.jpg" alt="PS5" class="product-image">
+        <h3>
+            MOUGOL Placa de vídeo AMD Radeon RX580 8GB GDDR5 256 bits, placa de vídeo para jogos de PC</h3>
+        <p class="price">R$749,99</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    <div class="product-card">
+        <img src="imagens/71FkawjLUDL._AC_SL1500_.jpg" alt="Gaming PC" class="product-image">
+        <h3>Kit Gamer Teclado Semi Mecanico Gamer Iluminado, Mouse Gamer C</h3>
+        <p class="price">  R$71,08</p>
+        <p class="rating">★★★★★</p>
+    </div>
+    
+</div>
+
+<!--Aplicação do ultimo conteiner-------->
+<div class="section-hero">
+    <!-- Imagem -->
+    <div class="image-hero">
+        <img src="imagens/watch-card-40-compare-202309_GEO_BR-removebg-preview.png" class="d-block w-100" alt="Fone de Ouvido JBL">
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="content-hero">
+        <h1>Compare os modelos 
+            de Apple Watch</h1>
+        <a href="#" class="cta-button">Ver Agora</a>
+    </div>
+</div>
+<!--Testemunhos-->
+<div class="testimonials-section">
+    <div class="testimonial">
+        <p class="quote">A TechGadgets superou minhas expectativas! A entrega foi rápida e o produto chegou em perfeito estado. Com certeza farei mais compras aqui.</p>
+        <p class="rating">★★★★★</p>
+        <p class="author">Maria</p>
+  
+    </div>
+    <div class="testimonial">
+        <p class="quote">Excelente serviço e uma vasta seleção de produtos. Encontrei exatamente o que procurava, e o atendimento ao cliente foi excepcional. Recomendo a TechGadgets a todos!</p>
+        <p class="rating">★★★★★</p>
+        <p class="author">Marcelo</p>
+       
+    </div>
+    <div class="testimonial">
+        <p class="quote">Comprei um smartphone e alguns acessórios na TechGadgets e estou muito satisfeito com a qualidade dos produtos e a rapidez na entrega. A experiência de compra foi fantástica!</p>
+        <p class="rating">★★★★★</p>
+        <p class="author">João</p>
+        
+    </div>
+</div>
+<!--RODAPE-->
+<footer>
+    <div class="footer-container">
+        <div class="download-app">
+            <p>Baixe nossa aplicação</p>
+            <p>Baixe nossa aplicação para Android e iOS</p>
+            <div class="store-buttons">
+                <a href="#"><img src="imagens/28dfe4625e359937d12cd798293767131243c718.jpg" alt="Google Play"></a>
+                <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+            </div>
+        </div>
+        <div class="about">
+            <h2>Tech<span>Gadgets</span></h2>
+            <p>TechGadgets : Especializada em eletrônicos e gadgets de última geração. Oferecemos produtos inovadores e de alta qualidade, garantindo uma experiência de compra única e garantida.</p>
+        </div>
+        <div class="useful-links">
+            <h3>Links úteis</h3>
+            <ul>
+                <li><a href="#">Cupons</a></li>
+                <li><a href="#">Redes Sociais</a></li>
+                <li><a href="#">Políticas</a></li>
+                <li><a href="#">Torne-se afiliado</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <!--adicionar interatividade a componentes como carrosséis, modais e dropdowns -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
